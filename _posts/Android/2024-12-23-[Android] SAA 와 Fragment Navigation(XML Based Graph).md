@@ -371,7 +371,7 @@ public open fun navigate(@IdRes resId: Int, args: Bundle?, navOptions: NavOption
 
 graph_dsl_on_activity 브랜치의 NavigationFragmentSample 폴더 내 graph 패키지에서 위의 내용을 확인 할 수 있다.
 
-[샘플 프로젝트](https://github.com/Gangglion/AndroidStudy/tree/graph_dsl_on_activity)
+[샘플 프로젝트](https://github.com/GlionDev/AndroidStudy/tree/graph_dsl_on_activity)
 
 
 
