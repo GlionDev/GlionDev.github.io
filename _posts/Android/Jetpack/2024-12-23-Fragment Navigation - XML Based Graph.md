@@ -24,8 +24,8 @@ Fragment 는 Activity 보다 가볍기 때문에 동일한 화면 Flow 를 Activ
 
 그러나, 장점만 있는것은 아니고 Fragment 또한 각 LifeCycle 이 존재하므로 더 복잡해 질 수 있으며 프로젝트 설계 단계에서 더 많은 부분을 고려해야 할 것이다.
 
-> [!TIP]
 > 이전에 Activity 기반으로 앱을 작성헀다면, SAA 와 다음으로 설명할 Fragment Navigation 을 사용하여 Fragment 기반으로 앱을 작성해보자.
+{: .prompt-tip }
 
 ### Navigation
 Android Jetpack 의 Navigation 구성요소에는 Navigation 라이브러리, Fragment 간 데이터를 전달하기 위한 Safe Args Gradle 플러그인, 화면 전환을 구현하는데 도움이 되는 여러 도구들이 포함되어 있다.

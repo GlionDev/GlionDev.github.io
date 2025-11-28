@@ -7,9 +7,9 @@ tags: [jetpack, fragment, navigation, DSL]
 
 이전 포스팅인 **[Android] SAA 와 Fragment Navigation - 1 (XML Based Graph)** 에서 이어진다.
 
-> [!INFO]
 > **이전 글 보러가기**
 > [[Android] SAA 와 Fragment Navigation - 1 (XML Based Graph)](https://gliondev.github.io/posts/Fragment-Navigation-XML-Based-Graph/)
+{: .prompt-info }
 
 ## 개요
 Android Docs 의 Navigation 파트의 `탐색 그래프 설계 - 개요` 를 보면 프로그래매틱 방식을 소개하고 있다.
@@ -17,9 +17,9 @@ Android Docs 의 Navigation 파트의 `탐색 그래프 설계 - 개요` 를 보
 여기서는 이전 포스팅에서 graph 방식으로 구현한 Navigation 을 DSL 방식으로 재구현 해본다.
 
 ## DSL 이란?
-> [!NOTE]
 > **DSL (Domain Specific Language)**
 > 특정 도메인에 대한 목적으로 만들어진 언어를 의미한다. 상용구 코드를 최소화 하기 위해 명령형 코드 대신 선언적 코드 형식을 따른다.
+{: .prompt-info }
 
 이전 `build.gradle(앱 수준)` 이나 `build.gradle(프로젝트 수준)` 은 groovy 언어로 작성되어 있었는데 이는 Gradle 스크립팅을 하는 것을 목적으로 하는 DSL 의 하나의 예시이다.
 
