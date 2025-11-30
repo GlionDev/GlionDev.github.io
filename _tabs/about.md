@@ -24,13 +24,13 @@ Android 영역에만 머무르지 않고, Ktor 기반 REST API 서버를 직접 
      - 외부 챗봇 시스템을 위한 WebView 인터페이스 연동 및 브릿지 통신 구현
    - **A-STOP**
      - 외부 챗봇 시스템을 위한 WebView 인터페이스 연동 및 브릿지 통신 구현
-  - **MindStrong**
-    - Flutter 모듈의 네이티브 통합
-    - MethodChannel 사용한 Native(Android) 와 Flutter 간 양방향 데이터 통신 파이프라인 구축
-  - **D-STOP**
-    - Design System 적용으로 UI 컴포넌트 공통화 및 재사용성 증대
-    - Custom Layout 구현을 통한 복잡한 디자인 요구사항 반영
-    - 의료기기 인증(식약처) 프로세스 기술 문서 대응
+   - **MindStrong**
+     - Flutter 모듈의 네이티브 통합
+     - MethodChannel 사용한 Native(Android) 와 Flutter 간 양방향 데이터 통신 파이프라인 구축
+   - **D-STOP**
+     - Design System 적용으로 UI 컴포넌트 공통화 및 재사용성 증대
+     - Custom Layout 구현을 통한 복잡한 디자인 요구사항 반영
+     - 의료기기 인증(식약처) 프로세스 기술 문서 대응
 
 ---
 
