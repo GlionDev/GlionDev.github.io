@@ -36,6 +36,7 @@ Android 영역에만 머무르지 않고, Ktor 기반 REST API 서버를 직접 
 
 ## ✨ Tech Stack
 ### 🔶 Android Native(System & AI)
+
 | 분야              | 기술                         |
 | :---------------- | :--------------------------- |
 | **Preprocessing** | NDK(C++), Essentia, Aubio    |
