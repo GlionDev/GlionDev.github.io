@@ -1,7 +1,7 @@
 ---
 title: "TextSize \"dp\" 로 고정해 둔 값이 풀리는 경우"
 date: 2023-11-02 17:39:03 +0900
-categories: [Android, TroubleShooting]
+categories: [TroubleShooting]
 tags: [Android, TroubleShooting, Dp, TestSize, Xml, Full Screen]
 ---
 
