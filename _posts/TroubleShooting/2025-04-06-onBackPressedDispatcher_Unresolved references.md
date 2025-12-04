@@ -11,7 +11,7 @@ tags: [TroubleShooting, onBackPressedDispatcher, onBackPressed(), Conflict Depen
 
 onBackPressedDispatcher 를 어떻게 사용하는지 알고 싶어서 들어오신 분들은 아래 링크를 확인하길 바란다.
 
-[onBackPressed() Deprecated 의 대안 - onBackPressedDispatcher 의 사용](https://gangglion.tistory.com/entry/Android-OnBackPressed-Deprecated-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%A0%EA%B9%8C)
+[onBackPressed() Deprecated 의 대안 - onBackPressedDispatcher 의 사용](https://gliondev.github.io/posts/Instead-of-OnBackPressed()/)
 
 ## 문제 상황
 회사에서 서비스 중인 앱의 유지보수를 진행하던 중, 시스템 뒤로가기 버튼 처리를 Deprecated 된 `onBackPressed()` 를 사용하고 있는 것을 발견했다.

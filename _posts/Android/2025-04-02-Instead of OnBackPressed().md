@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
 이를 통해 할 수 있는 가장 쉬운 예시로, 뒤로가기 버튼을 눌렀을떄 종료를 확인하는 팝업이 나타난다던지, "한번 더 누르면 앱이 종료됨" 을 알리는 `Toast` 를 띄우는 등으로 사용이 가능하다.
 
 <p align="left">
-  <img src="https://host.ggoggo.duckdns.org/Blog/250402_onBackPressed_deprecated/backpress_ex1.png" width="30%">
-  <img src="https://host.ggoggo.duckdns.org/Blog/250402_onBackPressed_deprecated/backpress_ex2.png" width="30%">
+  <img src="https://host.ggoggo.duckdns.org/Blog/250402_onBackPressed_deprecated/backpress_ex1.png" width="45%">
+  <img src="https://host.ggoggo.duckdns.org/Blog/250402_onBackPressed_deprecated/backpress_ex2.png" width="45%">
 </p>
 
 ## onBackPressed() 의 Deprecated
