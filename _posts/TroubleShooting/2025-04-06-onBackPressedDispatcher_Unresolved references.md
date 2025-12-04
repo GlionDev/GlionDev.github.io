@@ -189,7 +189,7 @@ gradle 은 기본적으로 최신 버전 우선 정책을 따른다고 하지만
 
 _**라이브러리 충돌로 `gradle` 은 가장 최신의 버전을 선택했지만, 모종의 이유로 라이브러리가 꼬여 `AppCompatActivity` 의 상속 트리가 꼬였다는 가설이 어느정도 확실시 되었다.**_
 
-### 타사 SDK 모듈 의존성 확인
+### 5. 타사 SDK 모듈 의존성 확인
 내 프로젝트에서는 `androidx.appcompat` 을 `1.6.1` 버전으로, `androidx.core` 를 `1.7.0` 버전으로 사용하고 있다.
 
 `androidx.appcompat` 라이브러리가 배포되어있는 [Maven Repository](https://mvnrepository.com/artifact/androidx.appcompat/appcompat/1.6.1) 를 들어가 `androidx.appcompat` 라이브러리에 대해 확인해보면, `appcompat` 라이브러리에서는 `androidx.activity 1.6.0` 버전을 사용하고 있기 때문에, `1.0.0` 을 사용하고자 하는 원인을 찾아야 했다.
