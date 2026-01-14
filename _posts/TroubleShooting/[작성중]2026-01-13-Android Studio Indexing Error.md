@@ -143,4 +143,46 @@ dependencies {
 }
 ```
 
+이 방식은 명확한 단점이 존재한다.
+- 코드가 조금만 바뀌어도 전체 gradle 재구성(sync) 이 발생한다.
+- Gradle 캐시 효율이 나쁘다
+    - 재구성 시 캐시를 못쓰고 처음부터 configuration 이 다시 돌게 된다.
+- 커질수록 빌드/Sync 가 느리다
+- 의존성 관리가 불편하다
+
+원래대로라면, buildSrc 가 먼저 나왔고 이 방식의 단점을 개선한 것이 version catalog 이다.
+
+하지만 AGP 나 Gradle 버전을 올렸을때 레거시 프로젝트 일 경우 작업량이 늘어나기 때문에, IDE 인덱싱 오류를 피하며 버전을 한곳에서 관리하기 위해선 buildSrc 를 사용하는것 또한 하나의 방법이 될 수 있다.
+
+> 멀티모듈 구조에서는 피해야 한다. 그때는 영향이 가지 않을 수준에서 AGP / Gradle 버전을 올리는것을 추천한다.
+{: .prompt-warning }
+
 ### 2. AGP 와 Gradle 버전 업데이트
+우선 확인해야 할 것이, 내 프로젝트의 AGP 와 Gradle 이 호환되는 버전인지 확인해야 한다. 현재 버전 구성은 호환이 가능한 버전이다.
+
+`Android Studio Otter 2` 의 AGP 버전 지원 범위는 4.0 ~ 8.13 까지이다.
+
+IDE 별 Gradle 버전 지원 범위와 AGP / Gradle 버전 호환 은 아래 링크를 참고하자.
+
+[IDE 버전 별 AGP 버전 지원 범위](https://developer.android.com/studio/releases?hl=ko#android_gradle_plugin_and_android_studio_compatibility)
+
+
+[AGP / Gradle 버전별 호환](https://developer.android.com/build/releases/gradle-plugin?hl=ko#updating-gradle)
+
+
+IDE 의 내부 모델(구현) 은 최신 AGP 와 Gradle 조합으로 검증되는데, 이 Gradle 버전 지원 범위에 속한다고 하여 **문제가 없다**는 말은 아니다.
+
+따라서, IDE 업데이트 시에는 AGP 와 Gradle 모두 지원하는 최신 버전으로 올려주는것이 권장된다.
+
+>이 방법을 사용할 경우 레거시 프로젝트의 버전을 올릴떄는 주의가 필요하다.
+{: .prompt-warning }
+
+1. Gradle 버전을 올릴 때는, 프로젝트 Root 경로에서
+    ```shell
+    ./gradlew wrapper --gradle-version N (N 은 버전명.)
+    ```
+    사용으로 Gradle 버전을 업데이트 한다.(Android Studio Otter 2 Feature Drop 의 경우 8.13)
+2. AGP 버전을 `8.13.0` 으로 올린다.
+
+버전 올린 뒤 `build clean` / `invalidate caches` 를 수행하고 프로젝트를 다시 열어보면 해결 된 것을 확인할 수 있다.
+
