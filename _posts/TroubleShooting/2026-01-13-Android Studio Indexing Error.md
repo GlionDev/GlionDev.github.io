@@ -11,10 +11,7 @@ tags: [TroubleShooting, AGP, Gradle, libs.version.toml]
 - IDE : Android Studio Otter 2 Feature Drop 2025.2.2
 
 build.gradle.kts(:app) 에서 libs.version.toml 을 사용했을 경우, 아래 이미지처럼 모든 코드가 `Unresolved Reference` 로 나타난다.
-```
-이미지 영역
-![]()
-```
+![오류 이미지](https://host.ggoggo.duckdns.org/Blog/260113_IDE_Error/problem.png)
 
 build.gradle.kts 에 새로운 의존성을 추가하거나, 변경할때 자동완성이 되지 않고 뭔가 오류가 난 것 같은 느낌을 준다.
 
@@ -178,7 +175,7 @@ IDE 의 내부 모델(구현) 은 최신 AGP 와 Gradle 조합으로 검증되�
 {: .prompt-warning }
 
 1. Gradle 버전을 올릴 때는, 프로젝트 Root 경로에서
-    ```shell
+    ```
     ./gradlew wrapper --gradle-version N (N 은 버전명.)
     ```
     사용으로 Gradle 버전을 업데이트 한다.(Android Studio Otter 2 Feature Drop 의 경우 8.13)
